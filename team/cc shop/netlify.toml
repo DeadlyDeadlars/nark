@@ -1,0 +1,10 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/webhook"
+  to = "/.netlify/functions/cryptobot-webhook"
+  status = 200
+  force = true
+
+

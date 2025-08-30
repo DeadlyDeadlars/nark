@@ -1,0 +1,25 @@
+# Пример файла .env для Telegram бота доставки
+# Скопируйте этот файл как .env и заполните своими значениями
+
+# Токен вашего Telegram бота (получите у @BotFather)
+BOT_TOKEN=your_bot_token_here
+
+# ID администратора (ваш Telegram ID, получите у @userinfobot)
+ADMIN_ID=your_telegram_id_here
+
+# Настройки логирования в канал (опционально)
+# ID канала для логов (например: -1001234567890)
+# ОБЯЗАТЕЛЬНО для всех типов каналов (публичных и приватных)
+# Получите ID: отправьте сообщение в канал и перешлите его боту @userinfobot
+LOGS_CHANNEL_ID=your_logs_channel_id_here
+
+# Username канала для логов (например: @your_logs_channel)
+# ОПЦИОНАЛЬНО, используется только для дополнительной информации
+# Для приватных каналов (без username) оставьте пустым
+LOGS_CHANNEL_USERNAME=your_logs_channel_username_here
+
+# Пример заполненного файла:
+# BOT_TOKEN=1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
+# ADMIN_ID=987654321
+# LOGS_CHANNEL_ID=-1001234567890
+# LOGS_CHANNEL_USERNAME=@my_logs_channel 

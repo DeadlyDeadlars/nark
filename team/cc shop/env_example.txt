@@ -1,0 +1,63 @@
+# ========================================
+# LUXURY SHOP Bot - Конфигурация
+# ========================================
+# Скопируйте этот файл в .env и заполните значения
+
+# Telegram Bot Token (получите у @BotFather)
+BOT_TOKEN=your_telegram_bot_token_here
+
+# CryptoBot @send API Token (получите у @CryptoBot)
+CRYPTOBOT_TOKEN=your_cryptobot_api_token_here
+
+# Настройки бота
+BOT_USERNAME=@your_bot_username
+OWNER_USERNAME=@luxury_sup
+
+# ========================================
+# ВАЖНО! Админские настройки
+# ========================================
+
+# Администраторы (через запятую)
+# Получите ID через @userinfobot
+ADMIN_USERNAMES=@luxury_sup,@admin1,@admin2
+ADMIN_IDS=123456789,987654321,555666777
+
+# Admin Channel ID для уведомлений о платежах (ОБЯЗАТЕЛЬНО!)
+# 1. Добавьте бота в ваш админский канал
+# 2. Сделайте бота администратором канала
+# 3. Получите ID канала через @userinfobot или @getidsbot
+# 4. ID должен начинаться с -100 для публичных каналов
+ADMIN_CHANNEL_ID=-1001234567890
+
+# ========================================
+# Webhook настройки (опционально)
+# ========================================
+WEBHOOK_URL=https://yourdomain.com/webhook
+WEBHOOK_SECRET=your_webhook_secret_key
+
+# Netlify (serverless) дополнительные переменные
+# Используются функцией netlify/functions/cryptobot-webhook.js
+ADMIN_ID=123456789
+FORWARD_URL=https://your-backend.example.com/webhook
+RELAY_TOKEN=your_relay_secret
+
+# ========================================
+# Кошельки для ручных переводов
+# ========================================
+
+# TON USDT wallet for manual transfers
+TON_USDT_WALLET=EQD...your_ton_wallet_address_here
+
+# TRX wallet for manual transfers
+TRX_USDT_WALLET=TW2sEyrgWyHsxWs2T6S867Tq1g8fnj5xUk
+
+# ========================================
+# Инструкция по настройке
+# ========================================
+# 1. Скопируйте этот файл в .env
+# 2. Заполните BOT_TOKEN и CRYPTOBOT_TOKEN
+# 3. Настройте ADMIN_CHANNEL_ID (самое важное!)
+# 4. Добавьте ID администраторов в ADMIN_IDS
+# 5. Запустите python test_config.py для проверки
+# 6. Запустите python test_bins.py для проверки BIN'ов
+# 7. Запустите python bot.py
